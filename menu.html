@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Table</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('pic4.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 20px;
+    }
+    table {
+        width: 80%;
+        margin: auto;
+        border-collapse: collapse;
+        border: 5px solid #333;
+        background-color: #fff;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    input[type=button] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    input[type=button]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+    <table border=0>
+        <tr>
+            <th colspan="4">MENU</th>
+        </tr>
+        <tr>
+            <th>Category</th>
+            <th>Save</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+        <tr>
+            <th><p align=left>Customers</td>
+            <td><input type="button" value="Save" onclick=Save_customers()></td>
+            <td><input type="button" value="Update" onclick=Update_customers()></td>
+            <td><input type="button" value="Delete" onclick=Delete_customers()></td>
+        </tr>
+        <tr>
+            <th><p align=left>Cart</td>
+            <td><input type=button value="Save" onclick=Save_cart()></th>
+            <td><input type=button value="Update" onclick=Update_cart()></th>
+            <td><input type=button value="Delete" onclick=Delete_cart()></th>
+         </tr>
+         <tr>
+            <th><p align=left>Orders</th>
+            <td><input type=button value="Save" onclick=Save_orders()></th>
+            <td><input type=button value="Update" onclick=Update_orders()></th>
+            <td><input type=button value="Delete" onclick=Delete_orders()></th>
+         </tr>
+         <tr>
+            <th><p align=left>Staff</th>
+            <td><input type=button value="Save" onclick=Save_staff()></th>
+            <td><input type=button value="Update" onclick=Update_staff()></th>
+            <td><input type=button value="Delete" onclick=Delete_staff()></th>
+         </tr>
+         <tr>
+            <th><p align=left>Shipment</th>
+            <td><input type=button value="Save" onclick=Save_shipment()></th>
+            <td><input type=button value="Update" onclick=Update_shipment()></th>
+            <td><input type=button value="Delete" onclick=Delete_shipment()></th>
+         </tr>
+         <tr>
+            <th><p align=left>Orderproducts</th>
+            <td><input type=button value="Save" onclick=Save_orderproducts()></th>
+            <td><input type=button value="Update" onclick=Update_orderproducts()></th>
+            <td><input type=button value="Delete" onclick=Delete_orderproducts()></th>
+         </tr>
+         <tr>
+            <th><p align=left>Payments</th>
+            <td><input type=button value="Save" onclick=Save_payments()></th>
+            <td><input type=button value="Update" onclick=Update_payments()></th>
+            <td><input type=button value="Delete" onclick=Delete_payments()></th>
+         </tr>
+         <tr>
+            <th><p align=left>Pos</th>
+            <td><input type=button value="Save" onclick=Save_pos()></th>
+            <td><input type=button value="Update" onclick=Update_pos()></th>
+            <td><input type=button value="Delete" onclick=Delete_pos()></th>
+         </tr>
+         <tr>
+            <th><p align=left>Stores</th>
+            <td><input type=button value="Save" onclick=Save_stores()></th>
+            <td><input type=button value="Update" onclick=Update_stores()></th>
+            <td><input type=button value="Delete" onclick=Delete_stores()></th>
+         </tr>
+         <tr>
+            <th><p align=left>Products</th>
+            <td><input type=button value="Save" onclick=Save_products()></th>
+            <td><input type=button value="Update" onclick=Update_products()></th>
+            <td><input type=button value="Delete" onclick=Delete_products()></th>
+         </tr>
+         <tr>
+            <th><p align=left>Stocks</th>
+            <td><input type=button value="Save" onclick=Save_stocks()></th>
+            <td><input type=button value="Update" onclick=Update_stocks()></th>
+            <td><input type=button value="Delete" onclick=Delete_stocks()></th>
+         </tr>
+         </body>
+         </table>
+         
+         <script>
+             function Save_customers()
+             {
+                window.open("customers.html","_self")
+             }
+             function Update_customers()
+             {
+                window.open("updatecustomers.html","_self")
+             }
+             function Delete_customers()
+             {
+                window.open("deletecustomers.html","_self")
+             }
+             function Save_cart()
+             {
+                window.open("cart.html","_self")
+             }
+             function Update_cart()
+             {
+                window.open("updatecart.html","_self")
+             }
+             function Delete_cart()
+             {
+                window.open("deletecart.html","_self")
+             }
+             function Save_orders()
+             {
+                window.open("orders.html","_self")
+             }
+             function Update_orders()
+             {
+                window.open("updateorders.html","_self")
+             }
+             function Delete_orders()
+             {
+                window.open("deleteorders.html","_self")
+             }
+             function Save_staff()
+             {
+                window.open("staff.html","_self")
+             }
+             function Update_staff()
+             {
+                window.open("updatestaff.html","_self")
+             }
+             function Delete_staff()
+             {
+                window.open("deletestaff.html","_self")
+             }
+             function Save_shipment()
+             {
+                window.open("shipment.html","_self")
+             }
+             function Update_shipment()
+             {
+                window.open("updateshipment.html","_self")
+             }
+             function Delete_shipment()
+             {
+                window.open("deleteshipment.html","_self")
+             }
+             function Save_orderproducts()
+             {
+                window.open("orderproducts.html","_self")
+             }
+             function Update_orderproducts()
+             {
+                window.open("updateorderproducts.html","_self")
+             }
+             function Delete_orderproducts()
+             {
+                window.open("deleteorderproducts.html","_self")
+             }
+             function Save_payments()
+             {
+                window.open("payments.html","_self")
+             }
+             function Update_payments()
+             {
+                window.open("updatepayments.html","_self")
+             }
+             function Delete_payments()
+             {
+                window.open("deletepayments.html","_self")
+             }
+             function Save_pos()
+             {
+                window.open("pos.html","_self")
+             }
+             function Update_pos()
+             {
+                window.open("updatepos.html","_self")
+             }
+             function Delete_pos()
+             {
+                window.open("deletepos.html","_self")
+             }
+             function Save_stores()
+             {
+                window.open("stores.html","_self")
+             }
+             function Update_stores()
+             {
+                window.open("updatestores.html","_self")
+             }
+             function Delete_stores()
+             {
+                window.open("deletestores.html","_self")
+             }
+             function Save_products()
+             {
+                window.open("products.html","_self")
+             }
+             function Update_products()
+             {
+                window.open("updateproducts.html","_self")
+             }
+             function Delete_products()
+             {
+                window.open("deleteproducts.html","_self")
+             }
+             function Save_stocks()
+             {
+                window.open("stocks.html","_self")
+             }
+             function Update_stocks()
+             {
+                window.open("updatestocks.html","_self")
+             }
+             function Delete_stocks()
+             {
+                window.open("deletestocks.html","_self")
+             }
+         </script>
+    

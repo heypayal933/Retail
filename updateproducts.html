@@ -1,0 +1,89 @@
+<title>Update Products Form</title>
+<style>
+    body {
+        background-size: cover;
+        font-family: Arial, sans-serif;
+    }
+    form {
+        max-width: 600px;
+        margin: 50px auto;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    table {
+        width: 100%;
+    }
+    th {
+        text-align: left;
+        padding: 10px;
+    }
+    input[type="text"], input[type="submit"], input[type="reset"], input[type="button"],input[type="date"] {
+        width: 100%; /* Full width by default */
+        padding: 8px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    input[type="submit"], input[type="reset"], input[type="button"] {
+        background-color: #007bff; /* Blue */
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: auto;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+        background-color: #0056b3; /* Darker Blue on hover */
+    }
+</style>
+</head>
+<body background=pic_product.jpeg>
+<form name="f" method="post" action="products.py">
+   <table border="0">
+	<h2><p align=center>UPDATE PRODUCTS</p>
+	<tr>
+	   <h5><label>ID</label>
+	   <input type="text" name="t1">
+	
+	   <label>Name</label>
+	   <input type="text" name="t2">
+	
+	   <label>Discription</label>
+	   <input type="text" name="t3">
+	
+	   <label>Producer</label>
+	   <input type="text" name="t4">
+
+       <label>Photo</label>
+	   <input type="text" name="t5">
+	
+	   <label>Price</label>
+	   <input type="text" name="t6">
+	</tr>
+	<tr>   
+	   <th><input type="reset" value="New" name="b1">
+	   <th><input type="submit" value="Update" name="b1">  
+	   <th><input type="submit" value="Allsearch" name="b1">
+ 	</tr>
+	<tr>
+	   <th><input type="submit" value="Psearch" name="b1">
+	   <th><input type="button" value="Home" onclick="menu()">
+	</tr>
+   </table>
+</form>
+<script>
+    function menu() 
+    {
+       window.open("menu.html","_self");
+    }
+</script>
+</body>
+</html>

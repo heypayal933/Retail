@@ -1,0 +1,66 @@
+<title>Login Form</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+table {
+    width: 100%;
+}
+th {
+    text-align: left;
+    padding: 8px;
+}
+input[type="text"], input[type="password"], input[type="button"], input[type="submit"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"], input[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #45a049;
+}
+</style>
+</head>
+<body background=login.jpg>
+<div class="container">
+    <form name="f" method="post" action="Login.py">
+        <table border="0">
+            <tr>
+                <th><p align="left">Login ID</th>
+                <td><input type="text" name="t1"></td>
+            </tr>
+            <tr>
+                <th><p align="left">Login Password</th>
+                <td><input type="password" name="t2"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Login" name="b1"></td>
+                <td><input type="button" value="Register" onclick="open_register()"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script>
+function open_register() {
+    window.location.href = "register.html";
+}
+</script>
